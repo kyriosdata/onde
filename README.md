@@ -1,2 +1,3 @@
 # onde
-Obtém localização a partir do navegador
+
+Obtém localização a partir de código executado no navegador.
