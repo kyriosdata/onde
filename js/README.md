@@ -4,11 +4,11 @@ O arquivo [onde.js](onde.js) possui cerca de 30 linhas de código e duas funçõ
 
 ### posicaoGeografica()
 
+Retorna uma _Promise_ cujo resultado é um objeto contendo duas propriedades, `latitude` e `longitude`.
+
 ```javascript
 posicaoGeografica().then(console.log);
 ```
-
-O resultado é um objeto contendo duas propriedades, `latitude` e `longitude`.
 
 ### onde(latitude, longitude)
 
@@ -22,7 +22,7 @@ as seguintes propriedades:
 - `estado`
 - `pais`
 
-### Possível uso
+Exemplo de uso possível, combinado:
 
 ```js
 posicaoGeografica()
