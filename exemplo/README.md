@@ -1,11 +1,12 @@
 ## Exemplo de uso do script
 
-Inclua o script usando uma das opções abaixo:
+Inclua o script usando uma das opções abaixo (a sugestão é identificar a versão mais
+recente e não necessariamente aquela identificada abaixo):
 
 - Via **jsdelivr**
-  - `<script src="https://cdn.jsdelivr.net/gh/kyriosdata/onde@v1.0.0/js/onde.js"></script>`
+  - `<script src="https://cdn.jsdelivr.net/gh/kyriosdata/onde@v1.0.1/js/onde.js"></script>`
 - Via **github**
-  - `<script src="https://github.com/kyriosdata/onde/releases/download/v1.0.0/onde.js"></script>`
+  - `<script src="https://github.com/kyriosdata/onde/releases/download/v1.0.1/onde.js"></script>`
 
 O arquivo [index.html](index.html) ilustra esta inclusão e o uso das duas funções
 definidas: **posicaoGeografica** e **onde**. De fato, o trecho de uso resume-se aquele abaixo:
