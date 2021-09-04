@@ -1,0 +1,21 @@
+{
+  "name": "exemplo-onde",
+  "version": "1.0.0",
+  "description": "Obter cidade, estado e país a partir do navegador",
+  "scripts": {
+    "start": "live-server ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kyriosdata/onde.git"
+  },
+  "author": "Fábio Nogueira de Lucena",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/kyriosdata/onde/issues"
+  },
+  "homepage": "https://github.com/kyriosdata/onde#readme",
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
+}
