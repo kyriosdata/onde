@@ -1,7 +1,7 @@
 /**
  * Recupera a posição geográfica do navegador no qual a função é executada.
  */
-function posicaoGeografica(callback) {
+function posicaoGeografica() {
   return new Promise((resolve, reject) => {
     const filtra = (p) =>
       resolve({
@@ -19,8 +19,8 @@ function posicaoGeografica(callback) {
 function onde(latitude, longitude) {
   const posicao = `latitude=${latitude}&longitude=${longitude}`;
   const hostPath = "api.bigdatacloud.net/data/reverse-geocode-client";
-  const URL = `https://${hostPath}?${posicao}&localityLanguage=pt-br`;
-  return fetch(URL)
+  const url = `https://${hostPath}?${posicao}&localityLanguage=pt-br`;
+  return fetch(url)
     .then((response) => response.json())
     .then((json) => ({
       latitude: json.latitude,
