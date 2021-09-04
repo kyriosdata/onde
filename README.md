@@ -1,10 +1,13 @@
 # Onde estou?
 
-Obtém localização geográfica a partir da qual o navegador é executado.
-Exige permissão do usuário.
+Script para uso em navegador que obtém localização geográfica a partir da qual é executado.
 
-A implementação encontra-se no diretório [js](js) e um exemplo de uso
-completo em [exemplo](exemplo).
+Observação: exige permissão do usuário.
+
+Organização:
+
+- implementação no diretório [js](js)
+- exemplo de uso no diretório [exemplo](exemplo)
 
 # Agradecimentos
 

@@ -24,8 +24,13 @@ as seguintes propriedades:
 
 Exemplo de uso possível, combinado:
 
-```js
+```javascript
 posicaoGeografica()
   .then((p) => onde(p.latitude, p.longitude))
   .then(console.log);
 ```
+
+## Testar
+
+- `npm run start` (disponibiliza arquivo 'index.html' em http://127.0.0.1:8080/)
+- `npm run test` (requisita a página index.html com pelo menos duas posições geográficas definidas para verificação)

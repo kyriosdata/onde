@@ -1,6 +1,6 @@
 {
   "name": "onde",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Obter cidade, estado e país a partir do navegador",
   "main": "index.js",
   "scripts": {

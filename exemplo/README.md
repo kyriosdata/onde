@@ -1,22 +1,27 @@
-## Exemplo de uso de script
+## Exemplo de uso do script
 
-O arquivo [index.html](index.html) ilustra como fazer uso da funcionalidade
-de localização geográfica.
-
-A implementação encontra-se disponível para uso em qualquer uma das opções abaixo:
+Inclua o script usando uma das opções abaixo:
 
 - Via **jsdelivr**
   - `<script src="https://cdn.jsdelivr.net/gh/kyriosdata/onde@v1.0.0/js/onde.js"></script>`
 - Via **github**
   - `<script src="https://github.com/kyriosdata/onde/releases/download/v1.0.0/onde.js"></script>`
 
+O arquivo [index.html](index.html) ilustra esta inclusão e o uso das duas funções
+definidas: **posicaoGeografica** e **onde**. De fato, o trecho de uso resume-se aquele abaixo:
+
+```javascript
+posicaoGeografica()
+  .then((p) => onde(p.latitude, p.longitude))
+  .then(exibeResultados);
+```
+
+onde é obtida a posição geográfica, que é repassada para a função **onde** que, por sua vez,
+retorna objeto contendo detalhes da posição fornecida. Neste caso, a função **exibeResultado**
+apenas atualiza elementos HTML tornando o resultado visível na página carregada.
+
 ## Como executar o exemplo?
 
 - `npm install`
 - `npm run start`
 - Se o navegador não abrir, então siga o link http://127.0.0.1:8080.
-
-## Testar
-
-- `npm run start` (disponibiliza arquivo 'index.html' em http://127.0.0.1:8080/)
-- `npm run test` (requisita a página index.html com pelo menos duas posições geográficas definidas para verificação)
