@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://github.com/kyriosdata/onde/releases/download/v1.0.0/onde.js"></script>
+
+    <!-- Você também pode obter o script necessário conforme abaixo -->
+    <!-- <script src="https://cdn.jsdelivr.net/gh/kyriosdata/onde@v1.0.0/js/onde.js"></script> -->
+  </head>
+  <body>
+    <h1>Posição geográfica</h1>
+    <h2 id="latitude"></h2>
+    <h2 id="longitude"></h2>
+    <h2 id="cidade"></h2>
+    <h2 id="estado"></h2>
+    <h2 id="pais"></h2>
+    <script>
+      function exibeResultados(detalhes) {
+        document.getElementById("latitude").innerHTML = detalhes.latitude;
+        document.getElementById("longitude").innerHTML = detalhes.longitude;
+        document.getElementById("cidade").innerHTML = detalhes.cidade;
+        document.getElementById("estado").innerHTML = detalhes.estado;
+        document.getElementById("pais").innerHTML = detalhes.pais;
+      }
+
+      function update(err, posicao) {
+        if (err) {
+          alert("ocorreu um erro");
+          return;
+        }
+
+        const { latitude, longitude } = posicao;
+        onde(latitude, longitude).then((info) => exibeResultados(info));
+      }
+
+      posicaoGeografica(update);
+    </script>
+  </body>
+</html>
