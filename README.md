@@ -2,6 +2,8 @@
 
 Script para uso em navegador que obtém localização geográfica a partir da qual é executado.
 
+Siga o link https://kyriosdata.github.io/onde para exemplo.
+
 Observação: exige permissão do usuário.
 
 Organização:
