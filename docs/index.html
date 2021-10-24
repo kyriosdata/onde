@@ -31,17 +31,9 @@
         document.getElementById("pais").innerHTML = detalhes.pais;
       }
 
-      function update(err, posicao) {
-        if (err) {
-          alert("ocorreu um erro");
-          return;
-        }
-
-        const { latitude, longitude } = posicao;
-        onde(latitude, longitude).then((info) => exibeResultados(info));
-      }
-
-      posicaoGeografica(update);
+      posicaoGeografica()
+        .then((p) => onde(p.latitude, p.longitude))
+        .then(exibeResultados);
     </script>
   </body>
 </html>
